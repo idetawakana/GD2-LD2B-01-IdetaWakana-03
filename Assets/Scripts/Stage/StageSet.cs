@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class StageSet : MonoBehaviour
 {
+    //0→何もない(プレイヤーの移動の制御に使う)　1→床　2→プレイヤーが動ける床　3→ブロック
     public float[,] stage = new float[,]
 {
         {0,0,0,0,0,0,0,0,0},
