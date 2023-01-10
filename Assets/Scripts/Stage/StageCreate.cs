@@ -45,7 +45,7 @@ public class StageCreate : MonoBehaviour
             {
                 for (int j = 0; j < stage.GetLength(1); j++)
                 {
-                    pos = new Vector3(j/* - (stage.GetLength(1) / 2)*/, -i/* + stage.GetLength(0) / 2*/, 0);
+                    pos = new Vector3(j, -i, 0);
 
                     if (stage[i, j] == 1)
                     {
