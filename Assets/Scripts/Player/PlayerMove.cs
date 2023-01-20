@@ -40,6 +40,22 @@ public class PlayerMove : MonoBehaviour
             }
         }
 
+        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            if (stageCreate.stage[-Mathf.RoundToInt(pos.y) - 1, Mathf.RoundToInt(pos.x)] == 2)
+            {
+                pos.y += speed;
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            if (stageCreate.stage[-Mathf.RoundToInt(pos.y) + 1, Mathf.RoundToInt(pos.x)] == 2)
+            {
+                pos.y -= speed;
+            }
+        }
+
         transform.position = pos;
     }
 }
